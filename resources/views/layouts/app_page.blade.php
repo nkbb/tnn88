@@ -21,7 +21,7 @@
         <div class="nav-custom-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 offset-md-9 text-center">
+                    <div class="col-md-3 offset-md-9 text-right">
                         <ul>
                             @guest
                                 <li><a href="{{ route('register') }}">สมัครสมาชิก</a></li>
@@ -33,6 +33,7 @@
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
+
                             @endif
                         </ul>
                     </div>
@@ -72,7 +73,7 @@
             </div>
         </nav>
 
-        <main class="mt-5">
+        <main class="">
             @yield('content')
         </main>
 
@@ -83,6 +84,7 @@
                 </div>
             </div>
         </footer>
+
     </div>
 
     @yield('script')

@@ -1,0 +1,94 @@
+@font-face {
+    font-family: prompt;
+    src: url(../font/prompt/Prompt-Regular.ttf);
+}
+
+body{
+    font-family:prompt;
+    font-size: 16px;
+    background-color: #121212;
+}
+
+.nav-custom-top{
+    background-image: url('../images/pages/head1.png');
+    height: 75px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    
+}
+.nav-custom-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-custom-top li {
+    float: right;
+}
+
+.nav-custom-top li a {
+    margin-top: 8px;
+    margin-left: 12px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #000000;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    color: #FFFFFF;
+    background-color: #000000;
+    border-style: none;
+    border-radius: 999px 999px 999px 999px;
+    box-shadow: 0px 5px 15px 0px rgba(39,48,112,0.51);
+}
+
+.nav-custom-top li .users{
+  
+    
+
+   
+    text-align: center;
+   
+}
+  
+  /* Change the link color to #111 (black) on hover */
+.nav-custom-top  li a:hover {
+    background-color: #111;
+}
+
+.nav-custom-line{
+    background-image: url('../images/pages/head2.png');
+    height: 60px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.nav-custom-promotion{
+    background-image: url('../images/pages/head3.png');
+    height: 60px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.mini-font{
+    color: #EFC26B;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.navbar-nav .nav-item .nav-link { color: #fff}
+
+.login-from .card{ 
+    background-color: #121212;
+    border-color: #e7c369;
+    color: #fff;
+
+}
+.login-from .card-header{
+    color: #d6b318;
+    font-size: 24px;
+    font-weight: bold;
+    
+
+}
