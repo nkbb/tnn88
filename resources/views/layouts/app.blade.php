@@ -40,10 +40,10 @@
             </div>
             
         </div>
-        <nav class="navbar navbar-expand-lg shadow-sm navbar-dark" style="background-color: #000000;">
+        <nav class="navbar navbar-expand-lg shadow-sm navbar-dark " style="background-color: #000000;">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                   TNN88
+                <a class="navbar-brand p-0" href="{{ url('/') }}">
+                    <img src="/images/logo.jpg" alt="logo" width="69x   px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -59,11 +59,23 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">หน้าหลัก</a>
+                            <a class="nav-link" href="/">หน้าหลัก</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">โปรโมชั่น</a>
                         </li>
+                        @guest
+                        @else
+                        @if( Auth::user()->type == 2)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.home') }}">จัดการ</a>
+                        </li>
+                        @elseif(Auth::user()->type == 1)
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('user.commission') }}">คอมมิชชั่น</a>
+                        </li>
+                        @endif
+                        @endif
                         <li class="nav-item">
                             <a class="nav-link" href="#">ทางเข้าแทง UFA BET</a>
                         </li>
@@ -85,6 +97,17 @@
         </footer>
     </div>
 
+    <script src="{{ asset('js/jquery.js') }}" ></script>
+    <script>
+        $(function(){
+            $(".seltitle").each(function(){
+                var t = this.title;
+                if(t == "") return;
+                if(typeof t == "undefined") return ;
+                $(this).val(t);
+            })
+        })
+    </script>
     @yield('script')
 </body>
 </html>

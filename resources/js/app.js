@@ -8,11 +8,14 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 import VueCarousel from 'vue-carousel';
- 
 Vue.use(VueCarousel);
 
+import VueSweetalert2 from 'vue-sweetalert2';
+Vue.use(VueSweetalert2);
 
-/**
+import vueNumeralFilterInstaller from 'vue-numeral-filter';
+Vue.use(vueNumeralFilterInstaller);
+/**df
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
  * components and automatically register them with their "basename".
@@ -26,6 +29,9 @@ Vue.use(VueCarousel);
 // Vue.component('page-home', require('./components/page/Home.vue').default);
 Vue.component('page-home', require('./components/pages/CarouselHome.vue').default);
 Vue.component('page-ha-slick-item', require('./components/pages/CarouselItem.vue').default);
+
+Vue.component('admin-commission-create', require('./components/admin/CommissionCreate.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
