@@ -29,7 +29,7 @@
 <div class="container">
     <div class="row mb-3">
         <div class="col-md-4 mt-3 text-center">
-            <img src="/images/pages/005.jpg" alt="banner" style="width:100%">
+            <img src="/images/pages/addline.jpg" alt="banner" style="width:100%">
         </div>
         <div class="col-md-4 mt-3 text-center">
             <img src="/images/pages/003.jpg" alt="banner" style="width:100%">
@@ -46,15 +46,15 @@
 <div class="container">
     <div class="row mb-3">
         <div class="col-md-4 mt-3 text-center">
-            <img src="/images/pages/pro66.jpg" alt="banner" style="width:100%">
+            <img src="/images/pages/pro_1.jpg" alt="banner" style="width:100%">
         </div>
         <div class="col-md-4 mt-3 text-center">
-            <img src="/images/pages/pro11.jpg" alt="banner" style="width:100%">
+            <img src="/images/pages/pro_2.jpg" alt="banner" style="width:100%">
         </div>
         <div class="col-md-4 mt-3 text-center">
             <img src="/images/pages/pro22.jpg" alt="banner" style="width:100%">
         </div>
-        <div class="col-md-4 mt-3 text-center">
+        <!-- <div class="col-md-4 mt-3 text-center">
             <img src="/images/pages/pro44-1.jpg" alt="banner" style="width:100%">
         </div>
         <div class="col-md-4 mt-3 text-center">
@@ -62,7 +62,7 @@
         </div>
         <div class="col-md-4 mt-3 text-center">
             <img src="/images/pages/pro66-1.jpg" alt="banner" style="width:100%">
-        </div>
+        </div> -->
     </div>
 </div>
 

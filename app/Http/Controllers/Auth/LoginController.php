@@ -61,4 +61,13 @@ class LoginController extends Controller
             'status' => '1'
         ];
     }
+
+    protected function validateLogin(Request $request)
+    {
+        $this->validate($request, [
+            'username' => 'required|string',
+            'password' => 'required|string',
+            'captcha' => 'required|captcha',
+        ]);
+    }
 }

@@ -39,6 +39,25 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <div class="col-md-4 col-6 mt-2 offset-md-4 text-right">
+                                <div class="captcha">
+                                    <span>{!! captcha_img() !!}</span>
+                                    <button type="button" class="btn btn-danger" class="reload" id="reload" onclick="reloadCaptcha()" style="font-size:20px;">
+                                        &#x21bb;
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-6 mt-2">
+                                <input id="captcha" type="text" class="form-control" placeholder="Captcha" name="captcha" autocomplete="off">
+                            </div>
+                            @error('captcha')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-3">
                                 <button type="submit" class="btn btn-danger btn-block">
@@ -52,4 +71,20 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('script')
+<script type="text/javascript">
+
+   function reloadCaptcha(){
+        $.ajax({
+            type: 'GET',
+            url: '/reload-captcha',
+            success: function (data) {
+                $(".captcha span").html(data.captcha);
+            }
+        });
+   }
+ 
+</script>
 @endsection

@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/reload-captcha', 'CaptchaServiceController@reloadCaptcha');
 
 Route::group(['middleware' => ['auth']], function() {
 
@@ -43,5 +44,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::put('/user/edit/{id}', 'AdminController@updateUser')->name('admin.user.update');
 
     Route::get('home/commission', 'UserController@index')->name('user.commission');
+
+    Route::get('contact-form', 'CaptchaServiceController@index');
+    Route::post('captcha-validation', 'CaptchaServiceController@capthcaFormValidate');
     
 });
