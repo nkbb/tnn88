@@ -15,6 +15,31 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pages.css') }}" rel="stylesheet">
+
+    <style>
+    .banner-left{
+        width: 50%;
+        text-align:center;
+    }
+    .banner-center{
+        width: 100%;
+    }
+
+    .banner-ritht{
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .banner-left{
+            width: 100%;
+            text-align:center;
+        }
+        .banner-center{
+            width: 100%;
+        }
+    }
+
+    </style>
 </head>
 <body>
     <div id="app">
