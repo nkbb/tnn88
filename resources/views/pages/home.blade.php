@@ -7,12 +7,12 @@
 }
 @media (max-width: 575.98px) { 
     .w-custom{
-        min-width: 580px; width: 580px;
+        min-width: 800px; width: 800px;
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .w-custom{
-        min-width: 770px; width: 770px;
+        min-width: 800px; width: 800px;
     }
 }
 
