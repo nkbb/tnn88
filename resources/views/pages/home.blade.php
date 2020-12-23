@@ -2,18 +2,14 @@
 
 @section('style')
 <style>
-.w-custom{
-    min-width: 1440px; width: 1440px;
-}
+.w-custom{min-width: 1440px; width: 1440px;}
+.w-banner{min-width: 800px; width: 800px;}
 @media (max-width: 575.98px) { 
-    .w-custom{
-        min-width: 800px; width: 800px;
-    }
+    .w-custom{min-width: 800px; width: 800px;}
+    .w-banner{min-width: 600px; width: 600px;}
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    .w-custom{
-        min-width: 800px; width: 800px;
-    }
+    .w-custom{min-width: 800px; width: 800px;}
 }
 
 /* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
@@ -80,13 +76,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="/images/pages/banner2-1.jpg" class="d-block w-100" alt="banner">
+                    <img src="/images/pages/banner2-1.jpg" class="d-block w-banner" alt="banner">
                     </div>
                     <div class="carousel-item">
-                    <img src="/images/pages/banner3-1.jpg" class="d-block w-100" alt="banner">
+                    <img src="/images/pages/banner3-1.jpg" class="d-block w-banner" alt="banner">
                     </div>
                     <div class="carousel-item">
-                    <img src="/images/pages/banner4-2.jpg" class="d-block w-100" alt="banner">
+                    <img src="/images/pages/banner4-2.jpg" class="d-block w-banner" alt="banner">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
