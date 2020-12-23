@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel = "icon" href = "{{ asset('images/logo.jpg') }}" type = "image/x-icon">  
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -47,11 +47,11 @@
         <div class="nav-custom-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 offset-md-9 text-right">
+                    <div class="col-md-4 offset-md-8 text-right">
                         <ul>
                             @guest
-                                <li><a href="{{ route('register') }}">สมัครสมาชิก</a></li>
-                                <li><a href="{{ route('login') }}">เข้าสู่ระบบ</a></li>
+                                <li><a href="https://tnn88.automebet.com/tnn88/ufabet/register">สมัครสมาชิก</a></li>
+                                <li><a href="{{ route('login') }}">ตรวจสอบค่าคอมมิชชั่น</a></li>
                             @else
                                 <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">ออกจากระบบ</a></li>
@@ -104,7 +104,7 @@
                         @endif
                         @endif
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ทางเข้าแทง UFA BET</a>
+                            <a class="nav-link" href="https://tnn88.automebet.com/tnn88/ufabet/login">เข้าสู่ระบบหรือเข้าเล่นเกมส์และ ฝาก-ถอน</a>
                         </li>
                     </ul>
                 </div>

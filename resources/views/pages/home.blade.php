@@ -17,7 +17,15 @@
 }
 
 /* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
-
+.hover img {
+	width: 100%;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover:hover img {
+	width: 102%;
+}
 </style>
 @endsection
 
@@ -62,7 +70,35 @@
         </div>
         <div class="col-sm-6 mt-3">
             <!-- <page-ha-slick-item></page-ha-slick-item> -->
-            <img src="/images/pages/banner2-1.jpg" alt="banner 4" class="banner-center">
+            <!-- <img src="/images/pages/banner2-1.jpg" alt="banner 4" class="banner-center"> -->
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="/images/pages/banner2-1.jpg" class="d-block w-100" alt="banner">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="/images/pages/banner3-1.jpg" class="d-block w-100" alt="banner">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="/images/pages/banner4-2.jpg" class="d-block w-100" alt="banner">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
         </div>
         <div class="col-sm-3 mt-3 text-center">
             <img src="/images/pages/right.jpg" alt="banner" class="banner-right">
@@ -77,13 +113,19 @@
 <div class="container">
     <div class="row mb-3">
         <div class="col-md-4 mt-3 text-center pl-4 pr-4">
-            <img src="/images/pages/addline.jpg" alt="banner" style="width:100%">
+            <a href="#" class="hover">
+                <img src="/images/pages/addline.jpg" alt="banner">
+            </a>
         </div>
         <div class="col-md-4 mt-3 text-center pl-4 pr-4">
-            <img src="/images/pages/003.jpg" alt="banner" style="width:100%">
+            <a href="https://tnn88.automebet.com/tnn88/ufabet/register" class="hover">
+                <figure><img src="/images/pages/003.jpg" alt="banner"><figure>
+            </a>
         </div>
         <div class="col-md-4 mt-3 text-center pl-4 pr-4">
-            <img src="/images/pages/004.jpg" alt="banner" style="width:100%">
+            <a href="https://tnn88.automebet.com/tnn88/ufabet/login" class="hover">
+                <figure><img src="/images/pages/004.jpg" alt="banner"> <figure>
+            </a>
         </div>
     </div>
 </div>
@@ -93,14 +135,14 @@
 </div>
 <div class="container">
     <div class="row mb-3">
-        <div class="col-md-4 mt-3 text-center pl-4 pr-4">
-            <img src="/images/pages/pro_1.jpg" alt="banner" style="width:100%">
+        <div class="col-md-4 mt-3 text-center pl-4 pr-4 hover">
+            <img src="/images/pages/pro_1.jpg" alt="banner">
         </div>
-        <div class="col-md-4 mt-3 text-center pl-4 pr-4">
-            <img src="/images/pages/pro_2.jpg" alt="banner" style="width:100%">
+        <div class="col-md-4 mt-3 text-center pl-4 pr-4 hover">
+            <img src="/images/pages/pro_2.jpg" alt="banner">
         </div>
-        <div class="col-md-4 mt-3 text-center pl-4 pr-4">
-            <img src="/images/pages/pro22.jpg" alt="banner" style="width:100%">
+        <div class="col-md-4 mt-3 text-center pl-4 pr-4 hover">
+            <img src="/images/pages/pro22.jpg" alt="banner">
         </div>
         <!-- <div class="col-md-4 mt-3 text-center">
             <img src="/images/pages/pro44-1.jpg" alt="banner" style="width:100%">
