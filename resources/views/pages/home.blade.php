@@ -1,8 +1,55 @@
 @extends('layouts.app_page')
 
+@section('style')
+<style>
+.w-custom{
+    min-width: 1440px; width: 1440px;
+}
+@media (max-width: 575.98px) { 
+    .w-custom{
+        min-width: 580px; width: 580px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .w-custom{
+        min-width: 770px; width: 770px;
+    }
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
+
+</style>
+@endsection
+
 @section('content')
-<page-home>
-</page-home>
+<!-- <page-home>
+</page-home> -->
+<div class="row">
+<div id="carouselMain" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="2000">
+      <img src="/images/pages/banner4-scaled.jpg" class="d-block w-custom" alt="banner">
+    </div>
+    <div class="carousel-item" data-interval="2000">
+      <img src="/images/pages/banner5-scaled.jpg" class="d-block w-custom" alt="banner">
+    </div>
+    <div class="carousel-item" data-interval="2000">
+      <img src="/images/pages/banner7-scaled.jpg" class="d-block w-custom" alt="banner">
+    </div>
+    <div class="carousel-item" data-interval="2000">
+      <img src="/images/pages/banner8-scaled.jpg" class="d-block w-custom" alt="banner">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselMain" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselMain" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 <div class="container-fluid">
     <div class="row mb-3">
         <div class="col-sm-3 mt-3 text-center">
@@ -66,9 +113,6 @@
         </div> -->
     </div>
 </div>
-
-
-
 
 @endsection
 
