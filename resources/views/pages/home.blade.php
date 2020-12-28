@@ -20,7 +20,7 @@
 	transition: .3s ease-in-out;
 }
 .hover:hover img {
-	width: 102%;
+	width: 105%;
 }
 </style>
 @endsection

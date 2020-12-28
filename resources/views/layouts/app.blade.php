@@ -16,6 +16,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pages.css') }}" rel="stylesheet">
+    <link href="{{ asset('fontawesome/css/all.css') }}" rel="stylesheet">
     @yield('style')
 </head>
 <body>
@@ -67,6 +68,9 @@
                             <a class="nav-link" href="#">โปรโมชั่น</a>
                         </li>
                         @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://tnn88.automebet.com/tnn88/ufabet/login">เข้าสู่ระบบหรือเข้าเล่นเกมส์และ ฝาก-ถอน</a>
+                        </li>
                         @else
                         @if( Auth::user()->type == 2)
                         <li class="nav-item">
@@ -76,11 +80,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('user.commission') }}">คอมมิชชั่น</a>
                         </li>
-                        @endif
-                        @endif
                         <li class="nav-item">
                             <a class="nav-link" href="https://tnn88.automebet.com/tnn88/ufabet/login">เข้าสู่ระบบหรือเข้าเล่นเกมส์และ ฝาก-ถอน</a>
                         </li>
+                        @endif
+                        @endif
+                        
                     </ul>
                 </div>
             </div>

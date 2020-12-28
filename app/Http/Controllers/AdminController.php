@@ -202,10 +202,11 @@ class AdminController extends Controller
             'name' => 'required',
             // 'phone' => 'required'
         ];
+        $upd = array();
 
         if(!empty($request->password)){
             $validate['password'] = 'required|min:6';
-            $upd['password'] = Hash::make($upd['password']);
+            $upd['password'] = Hash::make($request->password);
         }
         // $upd = $request->all();
         $this->validate($request, $validate);
