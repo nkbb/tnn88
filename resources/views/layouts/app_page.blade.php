@@ -98,7 +98,7 @@
                         @else
                         @if( Auth::user()->type == 2)
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.home') }}">จัดการ</a>
+                            <a class="nav-link" href="{{ route('admin.home') }}">จัดการข้อมูลสำหรับ Admin</a>
                         </li>
                         @elseif(Auth::user()->type == 1)
                         <li class="nav-item">
