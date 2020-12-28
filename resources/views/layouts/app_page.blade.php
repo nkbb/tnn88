@@ -59,6 +59,9 @@
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
+                                @if(Auth::user()->type == 1)
+                                <li><a href="{{ route('user.commission') }}">ค่าคอมมิชชั่น</a></li>
+                                @endif
 
                             @endif
                         </ul>

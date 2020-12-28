@@ -30,12 +30,12 @@
                                 <li><a href="https://tnn88.automebet.com/tnn88/ufabet/register">สมัครสมาชิก</a></li>
                                 <li><a href="{{ route('login') }}">ตรวจสอบค่าคอมมิชชั่น</a></li>
                             @else
+                                
+                                <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">ออกจากระบบ</a></li>
                                 @if(Auth::user()->type == 1)
                                 <li><a href="{{ route('user.commission') }}">ค่าคอมมิชชั่น</a></li>
                                 @endif
-                                <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">ออกจากระบบ</a></li>
-
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
