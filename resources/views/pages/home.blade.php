@@ -2,14 +2,11 @@
 
 @section('style')
 <style>
-.w-custom{min-width: 1440px; width: 1440px;}
 .w-banner{min-width: 800px; width: 800px;}
 @media (max-width: 575.98px) { 
-    .w-custom{min-width: 800px; width: 800px;}
     .w-banner{min-width: 600px; width: 600px;}
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    .w-custom{min-width: 800px; width: 800px;}
 }
 
 /* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
@@ -21,6 +18,10 @@
 }
 .hover:hover img {
 	width: 105%;
+}
+.w-custom{
+    /* max-height: 400px; */
+    width: 100%;
 }
 </style>
 @endsection
