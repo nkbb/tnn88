@@ -119,7 +119,7 @@
         </main>
 
         <footer>
-            <div class="container mt-5 mb-5">
+            <div class="container-fluid pl-0 pr-0 mt-5 mb-5">
                 <div style="color: #fff; font-size: 14px; border-top: 1px solid #fff;" class="pt-4 text-center">
                     ©2020.TNN88.net All Rights Reserved
                 </div>

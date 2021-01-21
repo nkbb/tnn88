@@ -4,15 +4,19 @@
 <style>
 .w-banner{min-width: 800px; width: 800px;}
 .w-custom{
-    width: 98%;
+    width: 100%;
 }
 @media (max-width: 575.98px) { 
     .w-banner{min-width: 600px; width: 600px;}
+    
     .w-custom{
-        width: 150%;
+        width: 180%;
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    .w-custom{
+        width: 150%;
+    }
 }
 
 /* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
@@ -25,7 +29,10 @@
 .hover:hover img {
 	width: 105%;
 }
-
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
 </style>
 @endsection
 
