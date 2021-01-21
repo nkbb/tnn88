@@ -3,8 +3,14 @@
 @section('style')
 <style>
 .w-banner{min-width: 800px; width: 800px;}
+.w-custom{
+    width: 98%;
+}
 @media (max-width: 575.98px) { 
     .w-banner{min-width: 600px; width: 600px;}
+    .w-custom{
+        width: 150%;
+    }
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
 }
@@ -19,10 +25,7 @@
 .hover:hover img {
 	width: 105%;
 }
-.w-custom{
-    /* max-height: 400px; */
-    width: 100%;
-}
+
 </style>
 @endsection
 
